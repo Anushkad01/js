@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Comparison</title>
+</head>
+
+<body>
+        <script>
+            console.log('First method to compare strings using strict equality operator');
+            document.write("Comparing strings with strict equality operator : "+"</br>");
+            var s1 = prompt("Enter the first string");
+            var s2 = prompt("Enter the second string");
+
+            if (s1.toLowerCase() === s2.toLowerCase()) {
+                console.log('The strings are similar.');
+                document.write("Strings "+s1+" and "+s2+" are similar"+"</br>");
+            }
+            else {
+                console.log('The strings are not similar.');
+                document.write("Strings "+s1+" and "+s2+" are not similar"+"</br>");
+            }
+
+            console.log('Second method to compare strings using Intl.Collator() constructor');
+            document.write("Comparing strings using Intl.Collator() constructor : "+"</br>");
+            const string1 = prompt("Enter the first string");
+            const string2 = prompt("Enter the second string");
+            const result = string1.localeCompare(string2, undefined, { sensitivity: 'base' });
+            if (result == 0) {
+                console.log('The strings are similar.');
+                document.write("The strings "+string1+" and "+string2+" are similar"+"</br>");
+            } else {
+                console.log('The strings are not similar.');
+                document.write("The strings "+string1+" and "+string2+" are not similar"+"</br>");
+            }
+
+        </script>
+
+    </body>
+
+    </html>
