@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <style>
+        h3{
+            text-align: center;
+        }
+
+        p{
+            text-align: center; 
+        }
+
+        img{
+            height: 50%;
+            width: 50%;
+            margin-left: 220px;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>
+        Congratulations!
+    </h3>
+
+    <p>This is a dummy text created using emmet</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum at sint eveniet rerum in dolore quaerat,
+        voluptatem corrupti qui, ea repellat quod! Optio consequatur commodi consequuntur architecto, incidunt
+        repudiandae impedit unde dolor at ipsum laudantium eum, est, quae rerum officiis blanditiis distinctio.
+        Architecto et unde eum nihil, aliquid omnis quidem.</p>
+    <img height="600px" width="900px" src="/digital-digital-art-artwork-fantasy-art-drawing-hd-wallpaper-thumb.jpg" alt="error">
+
+</body>
+
+</html>
