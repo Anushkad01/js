@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Operations</title>
+    <style>
+        body{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Array Operations</h1>
+    <script>
+         // Removing the specified element by value from the array 
+         var n=prompt("Enter the number of element");
+         var arr=[];
+
+         for(var i=0;i<n;i++){
+            arr[i]=prompt("Enter the values");
+         }
+
+
+function func(element) 
+{
+
+           //var arr = ["shift", "splice", "filter", "pop"];
+         
+for (var i = 0; i < arr.length; i++)
+ {
+
+    if (arr[i] === element) 
+    {
+
+        var spliced = arr.splice(i,1);
+        
+
+        document.write("Removed element: " + spliced + "<br>");
+
+        document.write("Remaining elements: " + arr+ "<br>");
+
+    }
+}
+}
+
+
+var element=prompt("Enter the element to remove");
+func(element);
+//func("filter");
+
+ // Check if an array contains specified value
+var check=prompt("Enter the element to check");
+const result = arr.includes(check);
+console.log(result); // true
+if(result==true)
+{
+    document.write("array contains specified value"+ "<br>");
+}
+else
+{
+    document.write("array does not contains specified value"+ "<br>");
+}
+
+
+//Empty an array
+while(arr.length > 0) {
+    arr.pop();
+}
+document.write("Empty array : ",+arr+ "<br>");
+
+
+    </script>
+</body>
+</html>
