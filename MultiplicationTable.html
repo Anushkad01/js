@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplication Table</title>
+</head>
+<body>
+    <script>
+        var number, result;
+        number = parseInt(prompt("Enter the number to show the multiplication table"));
+        document.write("Multiplication table of "+ number + "</br>");
+
+        i=1;
+        while(i<=10)
+        {
+            result = i*number;
+            document.write(number+"*"+i+"=" + result+ "</br>");
+            i++;
+            
+        }
+    </script>
+</body>
+</html>
